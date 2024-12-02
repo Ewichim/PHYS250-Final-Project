@@ -26,9 +26,9 @@ if __name__ == "__main__":
     # user options
     parser = argparse.ArgumentParser(usage=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument("-o", "--outDir", help="Output directory", default="./TestDataUnflippedVertexCut")
-    parser.add_argument("-j", "--ncpu", help="Number of cores to use", default=10, type=int)
-    parser.add_argument("-n", "--maxEvents", help="Number of events per bin", default='200', type=str)
-    parser.add_argument("-p", "--pixelAVdir", help="pixelAV directory", default="~/pixelav/")
+    parser.add_argument("-j", "--ncpu", help="Number of cores to use", default=20, type=int)
+    parser.add_argument("-n", "--maxEvents", help="Number of events per bin", default='5', type=str)
+    parser.add_argument("-p", "--pixelAVdir", help="pixelAV directory", default="/home/youeric/PixelSim/pixelav") #Change this
 
     ops = parser.parse_args()
 
@@ -44,7 +44,7 @@ if __name__ == "__main__":
                 os.remove(f"{outDir}/{f}")
 
     pixelAVdir = os.path.expanduser(ops.pixelAVdir)
-    semiparametricDir = os.path.expanduser(ops.semiparametricDir)
+    # semiparametricDir = os.path.expanduser(ops.semiparametricDir)
 
     # ./minbias.exe <outFileName> <maxEvents> <pTHatMin> <pTHatMax>
     path_to_executable = "./bin/minbias.exe"

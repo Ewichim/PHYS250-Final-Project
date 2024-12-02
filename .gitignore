@@ -1,6 +1,9 @@
-# folders
+# Exclude specific folders
 bin/
 temp/
 
-# types
+# Exclude specific file types
 *.hepmc
+
+# Exclude all TestDataUnflippedVertexCut files
+TestDataUnflippedVertexCut*

@@ -26,13 +26,12 @@ if __name__ == "__main__":
 
     # user options
     parser = argparse.ArgumentParser(usage=__doc__, formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument("-o", "--outDir", help="Output directory", default="./MuC_Output_BfieldTest")
+    parser.add_argument("-o", "--outDir", help="Output directory", default="./MuC_Output")
     parser.add_argument("-j", "--ncpu", help="Number of cores to use", default=10, type=int)
     parser.add_argument("-p", "--pixelAVdir", help="pixelAV directory", default="~/pixelav/")
     ops = parser.parse_args()
 
     # get absolute path for semiparametric directory
-    semiparametricDir = os.path.expanduser(ops.semiparametricDir)
     pixelAVdir = os.path.expanduser(ops.pixelAVdir)
 
     # get absolute path and check if outdir exists
