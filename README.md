@@ -35,3 +35,9 @@ cd ..
 make
 python launch.py -o temp -n 100
 ```
+# References and Credits
+https://github.com/elizahoward/cmspix28-mc-sim (Eliza Pixel Sim)
+https://github.com/elizahoward/pixelav (Pixel AV)
+https://github.com/elizahoward/smart-pixels-ml (Smart Pixels ML)
+https://github.com/kdipetri/produceSmartPixMuC (produce Smart Pixels MC)
+https://github.com/kdipetri/cmspix28-mc-sim (Pixel SIM Karri)
